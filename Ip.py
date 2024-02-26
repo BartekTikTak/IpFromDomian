@@ -5,7 +5,7 @@ domain = input(">")
 
 try:
     ip = socket.gethostbyname(domain)
-    print(f"IP serwera dla domeny {domain} to: {ip}")
+    print(f"IP for  {domain} is: {ip}")
 except socket.gaierror:
-    print("Nie można odnaleźć adresu IP dla podanej domeny.")
+    print("Unable to find the IP address for the specified domain.")
 time.sleep(120)
